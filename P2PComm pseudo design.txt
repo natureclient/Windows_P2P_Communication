@@ -1,0 +1,63 @@
+						      ===========
+						      | P2PCOMM |
+						      ===========
+						
+						      
+
+						     DESCRIPTION
+===================================================================================================================
+- Win32 console app that allows 2 people to talk together using TCP/IP via WinSock
+
+- One user will be a server and another will be the client
+
+----------
+| SERVER |
+----------
+
+The server will need to be started first
+
+	- Users will need to specify the Port to be used
+
+----------
+| CLIENT |
+----------
+
+The client will simply connect to the server in order to create a connection
+
+	- Users will need to specify the Port and the IP to connect to
+
+===================================================================================================================
+
+						   
+
+						     PSUEDO CODE
+===================================================================================================================
+Program Start
+	- Prompt to start server of client
+	- Run server or client function accordingly
+
+
+Server
+	- prompt for port
+	- ERROR check port
+	- INIT winsock DLL
+	- create socket
+	- fill server socket address struct
+	- bind socket
+	- set socket to listen
+	- accept incoming connections
+	- display connection info
+	- start communications loop (send data and receive data)
+	
+
+Client
+	- prompt for port and IP
+	- ERROR Check host ip
+	- ERROR check port
+	- INIT winsock DLL
+	- create socket
+	- fill client socket address struct
+	- connect to host server
+	- display connection info
+	- start communications loop (send data and receive data)
+===================================================================================================================

@@ -1,0 +1,3 @@
+- Fix spacing between messages sent and received
+
+- Fix error code 10054 from showing up when a peer disconnects
